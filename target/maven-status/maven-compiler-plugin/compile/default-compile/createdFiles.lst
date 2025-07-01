@@ -1,0 +1,8 @@
+com/rado/helpdesk/model/Status.class
+com/rado/helpdesk/model/Ticket.class
+com/rado/helpdesk/repository/UserRepository.class
+com/rado/helpdesk/model/Category.class
+com/rado/helpdesk/HelpdeskApplication.class
+com/rado/helpdesk/dto/UserDTO.class
+com/rado/helpdesk/Status.class
+com/rado/helpdesk/model/User.class

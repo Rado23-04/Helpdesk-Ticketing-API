@@ -1,0 +1,8 @@
+/home/rado/Bureau/helpdesk/src/main/java/com/rado/helpdesk/HelpdeskApplication.java
+/home/rado/Bureau/helpdesk/src/main/java/com/rado/helpdesk/Status.java
+/home/rado/Bureau/helpdesk/src/main/java/com/rado/helpdesk/dto/UserDTO.java
+/home/rado/Bureau/helpdesk/src/main/java/com/rado/helpdesk/model/Category.java
+/home/rado/Bureau/helpdesk/src/main/java/com/rado/helpdesk/model/Status.java
+/home/rado/Bureau/helpdesk/src/main/java/com/rado/helpdesk/model/Ticket.java
+/home/rado/Bureau/helpdesk/src/main/java/com/rado/helpdesk/model/User.java
+/home/rado/Bureau/helpdesk/src/main/java/com/rado/helpdesk/repository/UserRepository.java
