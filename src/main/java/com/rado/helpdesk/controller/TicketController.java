@@ -19,7 +19,7 @@ public class TicketController {
     @Autowired
     private TicketServiceImpl ticketService;
 
-    @PostMapping
+    @GetMapping("/get")
     public ResponseEntity<List<TicketDTO>> getAllTickets(){
         return ResponseEntity.ok(ticketService.getAllUsers());
     }

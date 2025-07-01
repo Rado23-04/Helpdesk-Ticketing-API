@@ -26,7 +26,7 @@ public class Ticket {
     private boolean status;
 
     @Column(nullable = false)
-    private Priority priority;
+    private String priority;
 
     @ManyToOne
     @JoinColumn(name = "assigned_user_id")

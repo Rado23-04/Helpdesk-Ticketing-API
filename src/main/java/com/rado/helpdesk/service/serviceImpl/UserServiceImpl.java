@@ -1,6 +1,5 @@
 package com.rado.helpdesk.service.serviceImpl;
 
-import com.rado.helpdesk.dto.UserDTO;
 import com.rado.helpdesk.model.User;
 import com.rado.helpdesk.repository.UserRepository;
 import com.rado.helpdesk.service.UserService;
@@ -17,13 +16,10 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserRepository userRepository;
     @Override
-    public UserDTO createUser(UserDTO userDTO) {
-        String passWordHashage = passwordEncoder.encode(userDTO.getPassword());
-        User user = new User();
-        user.setEmail(userDTO.getEmail());
+    public User createUser(User user) {
+        String passWordHashage = passwordEncoder.encode(user.getPassword());
         user.setPassword(passWordHashage);
 
-        User savedUser = userRepository.save(user);
-        return new UserDTO(savedUser.getEmail(),savedUser.getPassword());
+        return userRepository.save(user);
     }
 }

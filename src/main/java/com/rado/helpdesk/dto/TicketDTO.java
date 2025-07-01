@@ -12,5 +12,5 @@ public class TicketDTO {
     private String title;
     private String description;
     private boolean status;
-    private Priority priority;
+    private String priority;
 }

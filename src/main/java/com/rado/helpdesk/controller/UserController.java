@@ -1,6 +1,7 @@
 package com.rado.helpdesk.controller;
 
 import com.rado.helpdesk.dto.UserDTO;
+import com.rado.helpdesk.model.User;
 import com.rado.helpdesk.service.serviceImpl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,7 +19,7 @@ public class UserController {
     private UserServiceImpl userService;
 
     @PostMapping
-    public ResponseEntity<UserDTO> createUser(@RequestBody UserDTO userDTO){
-        return new ResponseEntity<>(userService.createUser(userDTO), HttpStatus.CREATED);
+    public ResponseEntity<User> createUser(@RequestBody User user){
+        return new ResponseEntity<>(userService.createUser(user), HttpStatus.CREATED);
     }
 }
